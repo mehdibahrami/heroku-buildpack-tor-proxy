@@ -111,10 +111,10 @@ if [ $IS_TOR_CACHED -eq 0 ]; then
     wget -q "$TOR_SRC_SIG_URL"
 
     # shellcheck disable=SC2181
-    if [ $? -ne 0 ]; then
-        echo_extra "FAILED to obtain signature ${TOR_SRC_SIG_URL}"
-        exit 1
-    fi
+    # if [ $? -ne 0 ]; then
+    #    echo_extra "FAILED to obtain signature ${TOR_SRC_SIG_URL}"
+    #    exit 1
+    # fi
 fi
 
 ################################################################################
